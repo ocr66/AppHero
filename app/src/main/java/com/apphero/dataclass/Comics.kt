@@ -2,7 +2,7 @@ package com.apphero.dataclass
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-
+import java.io.Serializable
 
 
 data class Comics(
@@ -17,4 +17,4 @@ data class Comics(
     val items: List<ComicItem>? = null,
     @SerializedName("returned")
     @Expose
-    val returned: Int? = null)
+    val returned: Int? = null): Serializable

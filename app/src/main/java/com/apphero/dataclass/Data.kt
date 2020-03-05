@@ -2,6 +2,7 @@ package com.apphero.dataclass
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Data(
     @SerializedName("offset")
@@ -18,4 +19,4 @@ data class Data(
     val count: Int? = null,
     @SerializedName("results")
     @Expose
-    val results: List<Result>? = null)
+    val results: ArrayList<Result>? = null): Serializable

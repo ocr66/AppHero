@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppHero</string>
+    <string name="loading">Cargando</string>
+    <string name="hero_name">Nombre Heroe</string>
+    <string name="public_key">PLACE PUBLIC KEY HERE</string>
+    <string name="private_key">PLACE PRIVATE KEY HERE</string>
+    <string name="marvel_endpoint">https://gateway.marvel.com/</string>
+    <string name="marvel_path">v1/public/characters</string>
+</resources>

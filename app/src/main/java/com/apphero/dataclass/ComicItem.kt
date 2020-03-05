@@ -2,7 +2,7 @@ package com.apphero.dataclass
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-
+import java.io.Serializable
 
 
 data class ComicItem(
@@ -11,4 +11,4 @@ data class ComicItem(
     val resourceURI: String? = null,
     @SerializedName("name")
     @Expose
-    val name: String? = null)
+    val name: String? = null): Serializable

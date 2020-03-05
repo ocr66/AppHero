@@ -1,4 +1,4 @@
-package com.apphero.adapters
+package com.apphero.util
 
 import java.math.BigInteger
 import java.security.MessageDigest

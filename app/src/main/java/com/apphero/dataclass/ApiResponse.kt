@@ -2,7 +2,7 @@ package com.apphero.dataclass
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-
+import java.io.Serializable
 
 
 data class ApiResponse(
@@ -26,4 +26,4 @@ data class ApiResponse(
     val etag: String? = null,
     @SerializedName("data")
     @Expose
-    val data: Data? = null)
+    val data: Data? = null): Serializable
