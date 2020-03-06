@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/hero_item_layout">
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp">
 
-    <ImageView
-        android:id="@+id/hero_image"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_margin="8dp"
-        android:src="@mipmap/ic_launcher"/>
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hero_name"
-        style="@style/HeroName"
-        android:id="@+id/hero_name"/>
+        android:orientation="horizontal"
+        android:id="@+id/hero_item_layout">
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/hero_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hero_name"
+            style="@style/HeroName"
+            android:id="@+id/hero_name"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
